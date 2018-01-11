@@ -13,7 +13,7 @@ namespace HaMusic.Xamarin
         public TcpClient currentConnection;
         public NetworkStream currentConnectionStream;
 
-        private const string SERVER_ADDRESS = "192.168.0.42";
+        private const string SERVER_ADDRESS = "192.168.0.101";
         //private const string SERVER_ADDRESS = "192.168.0.100";
         private const int SERVER_PORT = 5151;
 

@@ -39,7 +39,7 @@ namespace HaMusic.Xamarin.Droid
                 await connection.AttemptNetworkFunctionWithReconnect(async delegate
                 {
                     await HaProtoImpl.SendAsync(connection.currentConnectionStream, HaProtoImpl.Opcode.ADD, new HaProtoImpl.ADD() { uid = -1, after = HaProtoImpl.ADD.LOCATION_LAST, paths = new List<string>() { data }, special = "youtube" });
-                    Utils.ShowMessage("Added to playlist");
+                    Utils.ShowMessage("Adding to playlist...");
                 });
 
                 global::Xamarin.Forms.Forms.Init(this, bundle);
